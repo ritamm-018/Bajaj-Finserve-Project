@@ -1,0 +1,142 @@
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 450px 1fr;
+  }
+}
+
+.input-section {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.label-hint {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #666;
+  margin-left: 8px;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: 'Courier New', monospace;
+  transition: border-color 0.2s;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.textarea-field {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #e0e0e0;
+}
+
+.alert {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.alert-error {
+  background: #fee;
+  border: 1px solid #fcc;
+  color: #c33;
+}
+
+.results-section {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
